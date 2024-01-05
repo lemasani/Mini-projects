@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #9e49ee;
+
+}
+
+.contanier{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.hero h2{
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+.hero button{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 0;
+    cursor: pointer;
+    color: darkblue;
+    font-size: 1.0em;
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid darkblue;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.user{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.user-img{
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.user img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.user-info{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+}
+
+.user-info p{
+    margin-bottom: 3px;
+}
+
+.user-info p span{
+    font-weight: bold;
+}
